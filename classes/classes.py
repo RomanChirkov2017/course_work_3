@@ -1,6 +1,5 @@
 from datetime import datetime
 
-
 class Operation:
 
     def __init__(self, **kwargs):
@@ -32,7 +31,7 @@ class Operation:
         self.to = self.format_card(self.to)
 
     def beautiful_output(self):
-        """ывод в требуемом формате"""
+        """Вывод в требуемом формате"""
         print(f"""
             {self.date}  {self.description}
             {self.from_ if self.from_ else ""} -> {self.to}
